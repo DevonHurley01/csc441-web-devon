@@ -1,9 +1,9 @@
 /* Class 11: Step 4: the basics*/
 
 :root{
-    --text: #1a1a1a;
-    --texted-muted: #a6a2a2;
-    --accent: #2563eb;
+    --text: #1f1d1d;
+    --texted-muted: #b1a8a8;
+    --accent: #3d35d8;
     --background: #fbfbf2;
     --border: #e5e6e4;
 }
@@ -28,4 +28,13 @@ h2 {
     padding-bottom: 0.5rem;
 }
 
-footer { margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem; }
+footer { 
+    margin-top: 4rem; color: var(--text-muted); font-size: 0.9rem; 
+    /* Lab 11: task 4: links */
+    a{
+        color: var(accent);
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+    }
+    a:hover {border-bottom-color: var(--accent) ;}
+}
