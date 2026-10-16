@@ -9,7 +9,7 @@
 }
 
 body{
-    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-family: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
     color: var(--text);
     background: var(--background);
     line-height: 1.6;
@@ -18,14 +18,26 @@ body{
     padding: 3rem 1.5rem;
 }
 
-h1 { font-size: 2.5rem; margin-bottom: 0.25rem; }
+h1 { font-size: 3rem;   /* Class12: myown scale */
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+    }
 
 header p { color: var(--text-muted); font-size: 1.1rem; margin-top: 0; }
 
 h2 {
+    font-size: 1.75rem;
+    line-height: 1.2;
     margin-top: 2.5rem;
     border-bottom: 1px solid var(--border);
     padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+p{
+    font-size: 1.05rem;
+    line-height: 1;
+    margin-bottom: 1rem;
 }
 
 footer { 
@@ -37,4 +49,24 @@ footer {
         border-bottom: 1px solid transparent;
     }
     a:hover {border-bottom-color: var(--accent) ;}
+}
+
+.portrait{
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+section{
+    margin-bottom: 3rem;
+
+}
+
+ul{
+    padding-left: 1.25rem;
+}
+
+li{
+    margin-bottom: 0.5rem;
 }
