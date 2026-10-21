@@ -5,7 +5,7 @@
     --texted-muted: #b1a8a8;
     --accent: #3d35d8;
     --background: #fbfbf2;
-    --border: #e5e6e4;
+    --border: #0c0c0c;
 }
 
 body{
@@ -91,16 +91,40 @@ li{
     margin-bottom: 0.75rem;
     padding-left: 1rem;
     border-left: 2px solid var(--accent);
+    border-right: 14px solid transparent;
 }
 
 /* Class 13: Step 3: the nav bar */
 nav a {
     text-decoration: none;
     font-weight: 700;
-    padding: 0.25rem;
     border-bottom: 2px solid transparent;
 }
 
+/* Lab 13: Step 4: Seperate the var from the header */
+nav{
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
 nav a:hover {
-    border-bottom-color: var(--accent);
+    border-bottom-color: var(--border);
+}
+
+/* Lab 13: Step 1: which page am I on*/
+nav a.current {
+    border-bottom-color: var(--text);
+    color: var(--accent);
+}
+
+/* Lab 13: Step 5: one thing of your own*/
+nav ul{
+    align-items: center;
+    display: flex;
+    justify-content: 1rem;
+}
+/* Lab 13: Step 5: one thing of your own*/
+nav a:focus-visible {
+    outline: 2px solid var(--accent);
 }
