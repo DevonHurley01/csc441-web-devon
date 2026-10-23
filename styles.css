@@ -33,7 +33,7 @@ h1 { font-size: 3rem;   /* Class12: my own scale */
     }
 
 header p { 
-    color: var(--text-muted);
+    color: var(--border);
     font-size: 1.1rem;
     margin-top: 0;
     }
@@ -54,21 +54,33 @@ p{
 }
 
 /* Lab 12: Task 3: footer */
+/*Lab 14: Step 4: the footer stacks on the narrow screen */
 footer { 
     border-top: 1px solid var(--border);
     padding-top: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    /* Lab 11: task 4: links */
-    a{
-        color: var(accent);
-        text-decoration: none;
-        border-bottom: 1px solid transparent;
-    }
-    a:hover {border-bottom-color: var(--accent) ;}
+    flex-direction: column;
+    gap: 0.5rem;
 }
+
+@media(min-width: 40rem){
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+
+/* Lab 11: task 4: links */
+a{
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+}
+a:hover {border-bottom-color: var(--accent) ;}
+
 
 .portrait{
     width: 100px;
@@ -118,11 +130,24 @@ nav a.current {
 }
 
 /* Lab 13: Step 5: one thing of your own*/
+/* Lab 14: step 1: the nav stacks on the narrow screen */
 nav ul{
-    align-items: center;
+    list-style: none;
+    padding-left: 0;
     display: flex;
-    justify-content: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
 }
+/* Lab 14: step 1: add a media for nav */
+@media(min-width: 40rem){
+    nav ul{
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+}
+
 /* Lab 13: Step 5: one thing of your own*/
 nav a:focus-visible {
     outline: 2px solid var(--accent);
@@ -133,6 +158,8 @@ nav a:focus-visible {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    /* Lab 14: Step 6: One layout of your choice */
+    flex-wrap: wrap;
 }
 
 .card{
@@ -147,4 +174,10 @@ nav a:focus-visible {
     .cards{
         flex-direction: row;
     }
+}
+
+/* Class 14: Step 5: Adding an img section so images don't run off the page */
+img{
+    max-width: 100%;
+    height: auto;
 }
