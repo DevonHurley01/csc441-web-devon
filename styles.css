@@ -91,7 +91,6 @@ li{
     margin-bottom: 0.75rem;
     padding-left: 1rem;
     border-left: 2px solid var(--accent);
-    border-right: 14px solid transparent;
 }
 
 /* Class 13: Step 3: the nav bar */
@@ -127,4 +126,25 @@ nav ul{
 /* Lab 13: Step 5: one thing of your own*/
 nav a:focus-visible {
     outline: 2px solid var(--accent);
+}
+
+/* Class 14: Step 2: the cards go in a row */
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card{
+    flex: 1;
+    padding: 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+/* Class 14: Step 3: a row when there's no room */
+@media(min-width: 40rem){
+    .cards{
+        flex-direction: row;
+    }
 }
