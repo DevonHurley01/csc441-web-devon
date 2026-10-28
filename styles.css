@@ -181,3 +181,11 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+body.dark-mode{
+    --text: White;
+    --texted-muted: silver;
+    --accent: skyblue;
+    --background: Black;
+    --border: dimgray;
+}
