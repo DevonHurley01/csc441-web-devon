@@ -10,6 +10,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="styles.css">
+        <!-- Lab 15: Step 1: my third file-->
+         <script src="script.js" defer></script>
         <!-- For fun: added a favicon for my website -->
             <link rel="icon" href="favicon/icon-192.png" type="image/x-icon">
 
@@ -24,6 +26,8 @@
             <li><a href="projects.html">Projects</a></li>
             <!--Lab 13: Step 3: Show the contact page-->
             <li><a href="contact.html" class="current">Contact</a></li>
+            <!-- Lab 15: Step 1: a theme button-->
+            <li><button id="theme-toggle" type="button">Dark Mode</button></li>
         </ul>
     </nav>
     <!-- Class 11: step 2: the page -->
@@ -57,10 +61,13 @@
 
         <!-- Lab 12: step 3: two things in the footer -->
         <footer>
-            <p>© 2026 Devon Hurley</p>
+            <!-- Lab 15: Step 1: the year, written by JavaScript-->
+            <p>© <span id="year"></span> Devon Hurley</p>
             <p> </p>
             <!-- Lab 11 · Task 3: a link off my page -->
             <a href="https://github.com/DevonHurley01/csc441-web-devon.git" target="_blank" rel="noopener">GitHub</a>
+            <!-- Lab 15: Step 5: a button to scroll to the top -->
+            <button id="top-button" type="button">Top</button>
         </footer>
 
 </body>
