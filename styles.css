@@ -1,3 +1,8 @@
+/* Class 16: Step 3: Padding counts inside width, not on the inside */
+*{
+    box-sizing: border-box;
+}
+
 /* Class 11: Step 4: the basics*/
 
 :root{
@@ -188,4 +193,42 @@ body.dark-mode{
     --accent: skyblue;
     --background: Black;
     --border: dimgray;
+}
+
+/* Class 16: Step 3: The form */
+form label{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+form input, form textarea{
+    font: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    scroll-padding-block-start: 6px;
+    background: var(--background);
+    color: var(--text);
+}
+
+form input:focus, form textarea:focus{
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+form button{
+    font: inherit;
+    font-weight: 700;
+    background: var(--accent);
+    color: var(--background);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#form-status{
+    font-weight: 700;
+    color: var(--accent);
 }
