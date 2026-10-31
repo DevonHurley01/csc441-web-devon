@@ -30,3 +30,16 @@ On the phone the header was not stacking when it should have been. I added fex-w
     This week we were trying to make the theme button and I forgot to add the .toggle in the JavaScript. I didn't notice the error in the console, but it was eventually found by the teacher.
 5. What is one thing on your page you don't know how to change yet?
     I wish the change from ligh mode to dark mode was smoother like fade or smooth transition.
+
+## Week 10, Friday
+1. What does event.preventDefault() do, and what happens without it?
+    It stops the form from refreshing and clearing the information.
+2. You got "Cannot read properties of null" in class. In your own words, why did it happen, and why did if fix it?
+    JavaScript is trying to find something in the HTML and it wasn't there. The if statement checks if the element is available before using it.
+3. What rule did you write for your form, and why that rule?
+    I wrote all three rules. I made it so it checks the name, email, and message before allowing the user to send the message.
+4. The two things you found and fixed at phone width.
+    <!--Lab 16: Task 3: 2 fixes-->
+    I added a min-height to form button to make it more iphone friendly. I also added a max width to form input, form textarea so it would go out of the text fields.
+5. Your form does not actually send anything anywhere yet. What do you think is missing?
+    It is missing a mailto:bob@email.com right from the page. This allows the users message to go straight through to your email without leaving the site.

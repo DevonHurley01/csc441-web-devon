@@ -1,3 +1,8 @@
+/* Class 16: Step 3: Padding counts inside width, not on the inside */
+*{
+    box-sizing: border-box;
+}
+
 /* Class 11: Step 4: the basics*/
 
 :root{
@@ -6,6 +11,7 @@
     --accent: #3d35d8;
     --background: #fbfbf2;
     --border: #0c0c0c;
+    --error: crimson;
 }
 
 body{
@@ -188,4 +194,86 @@ body.dark-mode{
     --accent: skyblue;
     --background: Black;
     --border: dimgray;
+    --error: lightsalmon;
+}
+
+/* Class 16: Step 3: The form */
+form label{
+    display: block;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+form input, form textarea{
+    font: inherit;
+    width: 100%;
+    /* Lab 16: Step 3: the form on a phone */
+    max-width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border);
+    scroll-padding-block-start: 6px;
+    background: var(--background);
+    color: var(--text);
+}
+
+form input:focus, form textarea:focus{
+    outline: 2px solid var(--accent);
+    outline-offset: 1px;
+}
+
+form button{
+    font: inherit;
+    font-weight: 700;
+    background: var(--accent);
+    color: var(--background);
+    border: none;
+    padding: 0.5rem 1rem;
+    /* Lab 16: Step 3: Form on a phone */
+    min-height: 44px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#form-status{
+    font-weight: 700;
+    color: var(--accent);
+}
+
+#myform{
+    display: none;
+}
+
+button#theme-toggle{
+    font: inherit;
+    font-weight: 700;
+    background: var(--accent);
+    color: var(--background);
+    border: none;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.clickableemail{
+    cursor: pointer;
+    color: var(--accent);
+    text-decoration: underline;
+
+}
+
+.top-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--accent);
+    color: var(--background);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Lab 16: Step 1: the error state */
+#form-status.error{
+    color: var(--error);
 }
