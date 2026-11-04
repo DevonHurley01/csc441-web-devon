@@ -43,3 +43,7 @@ On the phone the header was not stacking when it should have been. I added fex-w
     I added a min-height to form button to make it more iphone friendly. I also added a max width to form input, form textarea so it would go out of the text fields.
 5. Your form does not actually send anything anywhere yet. What do you think is missing?
     It is missing a mailto:bob@email.com right from the page. This allows the users message to go straight through to your email without leaving the site.
+
+
+## Week 11, Wednesday
+live site: https://devonhurley.netlify.app/
