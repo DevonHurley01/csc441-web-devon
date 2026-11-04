@@ -43,3 +43,16 @@ On the phone the header was not stacking when it should have been. I added fex-w
     I added a min-height to form button to make it more iphone friendly. I also added a max width to form input, form textarea so it would go out of the text fields.
 5. Your form does not actually send anything anywhere yet. What do you think is missing?
     It is missing a mailto:bob@email.com right from the page. This allows the users message to go straight through to your email without leaving the site.
+
+
+## Week 11, Wednesday
+live site: https://devonhurley.netlify.app/
+
+1. In your own words: what does GitHub do, and what does Netlify do?
+    Github stores you code and tracks your changes. Netlfy takes code form github and publish it so other can see it.
+2. You are about to merge into development and your live site will not change. Why?
+    The development is not connected to the live published version it is a bridge from your local to your publish site.
+3. What does the padlock in the address bar actually mean?
+    This means that the connection between the website and browsers address are encrypted.
+4. Your repository is public and now your site is too. Is there anything in your repo you would not hand a stranger
+    I don't notice anyhting on my site that I wouldn't share. If did have anything I would not want passwords or any private information shared on the live site.
