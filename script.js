@@ -119,7 +119,7 @@ contactForm.addEventListener("submit", function (event) {
 
     formStatus.classList.remove("error");
     formStatus.textContent = "Thanks, " + name + ". Your message is ready to be sent!";
-    contactForm.reset();
+    contactForm.submit();
     localStorage.removeItem("draftname");
     localStorage.removeItem("draftemail");
     localStorage.removeItem("draftmessage");

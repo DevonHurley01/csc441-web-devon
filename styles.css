@@ -277,3 +277,8 @@ button#theme-toggle{
 #form-status.error{
     color: var(--error);
 }
+
+/* Class 18: Step 2: the honeypot hidden from people */
+.hidden-field {
+    display: none;
+}
