@@ -56,3 +56,17 @@ live site: https://devonhurley.netlify.app/
     This means that the connection between the website and browsers address are encrypted.
 4. Your repository is public and now your site is too. Is there anything in your repo you would not hand a stranger
     I don't notice anyhting on my site that I wouldn't share. If did have anything I would not want passwords or any private information shared on the live site.
+
+## Week 11, Friday
+1. Your form has a hidden field nobody can see. Explain what it is for, and why it works better than asking people to prove they are human.
+    A hidden field used within the code is honeypot "bot field". It is used ot detect if a human is filling out the form or a bot. Netlify can recognize the submissions. 
+2. What is a Deploy Preview, and when would you actually use one?
+    Deploy preview is a temporary feature that allows you to see what the website will look like before going live. I would use this when changing a feature or design to make sure everything works properly.
+3. The two things you found and fixed on a real phone.
+    I have not found any issues when looking at it on the phone version. 
+4. Describe the path a change takes from your laptop to the public, naming every branch it passes through.
+    After making changes to my code I save it then I push it to github using this weeks branch. Then the changes get merged to development branch. From development branch it gets merged to release which is connected to netlify. 
+5. Your site now has two addresses, the netlify.app one and your own domain. Why do both still work?
+    Both address work because they are both connect through netlify. The netlify.app is automatically provided. The custome domain gives people another way to find my website. 
+6. Your site is on the internet now. What is one thing you want to add before the end of the semester?
+    I would like to add a banner or change the phone menu to a drop down. 
