@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interests -Devon Hurley</title>
+    <!-- Class 12: Step 1: a typeface I chose -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Class 15: Step 1: my third file-->
+    <script src="script.js" defer></script>
+    <!-- Class 20: Step 2: API connection, then API page -->
+    <script src="config.js" defer></script>
+    <script src="interests.js" defer></script>
+    <!-- For fun: added a favicon for my website -->
+    <link rel="icon" href="favicon/icon-192.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!--Class 13: Step 2: navigation-->
+    <nav>
+        <ul>
+            <!--Lab 13: Step 1: Show which page your on-->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="interests.html" class="current">Interests</a></li>
+            <!-- Class 15: Step 3: a theme button-->
+            <li><button id="theme-toggle" type="button">Dark Mode</button></li>
+        </ul>
+    </nav>
+    <!-- Class 11: step 2: the page -->
+    <header>
+        <!-- Class 12: Step 3: an image -->
+        <img src="images/me.jpg" alt="Portrait of Devon Hurley" class="portrait">
+        <!-- Lab 12: Task 1: group the text so it stacks beside the photo -->
+        <div>
+            <h1>Devon Hurley</h1>
+            <p> Welcome to Crowd </p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Class 20: Step 1: add inside the existing <main> on interests.html -->
+        <section class="interests-section">
+            <h2>My Interests</h2>
+            <p>
+                These items come from my Supabase database.
+            </p>
+            <p id="showcase-status" role="status">Waiting to load...</p>
+            <p id="showcase-count"></p>
+            <div id="showcase-grid" class="showcase-grid"></div>
+        </section>
+    </main>
+
+    <!-- Lab 12: step 3: two things in the footer -->
+    <footer>
+        <!-- Class 15: Step 2: the year, written by JavaScript-->
+        <p>© <span id="year"></span> Devon Hurley</p>
+        <p> </p>
+        <!-- Lab 11 · Task 3: a link off my page -->
+        <a href="https://github.com/DevonHurley01/csc441-web-devon.git" target="_blank" rel="noopener">GitHub</a>
+        <!-- Lab 15: Step 5: a button to scroll to the top -->
+        <button id="top-button" class="top-button" type="button">Back to Top</button>
+    </footer>
+
+</body>
+
+</html>
