@@ -70,3 +70,15 @@ live site: https://devonhurley.netlify.app/
     Both address work because they are both connect through netlify. The netlify.app is automatically provided. The custome domain gives people another way to find my website. 
 6. Your site is on the internet now. What is one thing you want to add before the end of the semester?
     I would like to add a banner or change the phone menu to a drop down. 
+
+## Week 12, Wednesday, Lab 19
+1. In your own words, what is stored in a database table?
+    A database table stores information in rows and columns. Which uses ids to store each row of data. 
+2. What is the difference between a table and an API endpoint?
+    A table is what stores the information while an end point is what allows other website to access this table.
+3. What does GET do? What format did your endpoint return?
+    GET is used to recieve data from a database. The endpoint is what returns the data to the JSON. 
+4. Why do we use a publishable key, not a secret key?
+    A publishable key is safest to use when working in the front end. The secret key should not be shared, but it gives more access.
+5. What changed when select=* became select=title,category?
+    When entering select=* we ask for all the information in return instead of specific information. When declaring select=title,category. We are asking for specific information gathered. It is like filtering for the info you want. 
