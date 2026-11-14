@@ -82,3 +82,15 @@ live site: https://devonhurley.netlify.app/
     A publishable key is safest to use when working in the front end. The secret key should not be shared, but it gives more access.
 5. What changed when select=* became select=title,category?
     When entering select=* we ask for all the information in return instead of specific information. When declaring select=title,category. We are asking for specific information gathered. It is like filtering for the info you want. 
+
+## Week 12, Friday — Lab 20
+1. What does fetch() send and what does response.json() return?
+    fetch() send a request to gather data. While response.json() translates the response into javascript that can be used.
+2. Why does the page use textContent instead of innerHTML?
+    textContent doesn't treat the page as an HTML.
+3. What happens when Supabase returns an empty list?
+    When the return is empty there is an error messages that say it cound't load the data. 
+4. How does the page behave when the network fails?
+    When the network fails it says that it had trouble loading data and to check the console.
+5. What is the proof that a card is NOT hardcoded in HTML?
+    Once you change a title, description, or category in Supabase. The data on the page changes right after. The data is changable without having to go back to the HTML. 
